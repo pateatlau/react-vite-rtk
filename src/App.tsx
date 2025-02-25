@@ -1,19 +1,24 @@
 import store from './store/store'
 import { Provider } from 'react-redux'
 
-import { Container, Typography } from '@mui/material'
+import { Container, Divider, Typography } from '@mui/material'
 
 import './App.css'
 
 import AddHabitForm from './components/add-habit-form';
+import HabitsList from './components/habits-list';
 
 function App() {
   return (
     <>
     <Provider store={store}>
       <Container maxWidth="md">
-        <Typography variant="h2" component="h1" align="center">Habit Tracker</Typography>
+        <Typography variant="h3" component="h1" align="center" margin={3}>
+          My Habits Tracker
+        </Typography>
         <AddHabitForm />
+        <Divider sx={{ margin: '30px 0' }} />
+        <HabitsList />
       </Container>
     </Provider>
     </>
