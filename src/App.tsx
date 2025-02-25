@@ -7,6 +7,7 @@ import './App.css'
 
 import AddHabitForm from './components/add-habit-form';
 import HabitsList from './components/habits-list';
+import HabitStats from './components/habit-stats';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <AddHabitForm />
         <Divider sx={{ margin: '30px 0' }} />
         <HabitsList />
+        <Divider sx={{ margin: '30px 0' }} />
+        <HabitStats />
       </Container>
     </Provider>
     </>
